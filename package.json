@@ -6,7 +6,7 @@
   "scripts": {
     "develop": "yarn run clean && gatsby develop",
     "build": "yarn run clean && gatsby build",
-    "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "yarn run clean && gatsby build && gh-pages -d public -b master",
     "clean": "rimraf .cache public",
     "flow": "flow",
     "lint:js": "eslint --cache --ext .js,.jsx .",
@@ -41,6 +41,7 @@
     "bluebird": "^3.7.2",
     "classnames": "^2.2.6",
     "codecov": "^3.6.5",
+    "develop": "^1.0.0",
     "gatsby": "^2.20.8",
     "gatsby-link": "^2.3.1",
     "gatsby-plugin-catch-links": "^2.2.1",
@@ -79,7 +80,8 @@
     "react": "^16.13.1",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "run": "^1.4.0"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
